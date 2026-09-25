@@ -1,0 +1,23 @@
+{
+  "name": "easy-chatbox",
+  "version": "1.0.0",
+  "description": "A dead-simple, single-file AI chat box. No build step, no dependencies to install — just open `index.html` and point it at any OpenAI-compatible API.",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fuaadabdullah/goblin-chat.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fuaadabdullah/goblin-chat/issues"
+  },
+  "homepage": "https://github.com/fuaadabdullah/goblin-chat#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.63.0"
+  }
+}

@@ -42,9 +42,25 @@ your machine except to the API endpoint you configure.
 - Multi-turn conversation history, one-click new chat
 - Dark mode UI, mobile-friendly, zero build tooling
 
+## Testing
+
+Playwright end-to-end tests (the API is mocked, so no key or model needed):
+
+```bash
+npm install
+npx playwright install chromium   # one-time browser download
+npm test
+```
+
+Covers: page load, sending a message with a mocked streaming reply, markdown/code-block
+rendering, settings save + persistence, new-chat clearing, and API error handling.
+
 ## Files
 
-- `index.html` — the entire app (HTML + CSS + JS, CDN libs: marked, DOMPurify)
+- `index.html` — the entire app (HTML + CSS + JS)
+- `vendor/` — vendored JS libs (marked, DOMPurify) so the app works fully offline
+- `tests/` — Playwright E2E tests
+- `playwright.config.js` — test config (serves the folder on :8080)
 - `README.md` — this file
 - `LICENSE` — MIT
 
